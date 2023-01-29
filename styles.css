@@ -1,0 +1,217 @@
+
+/* --------global------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Verdana,sans-serif;
+}
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+/* --------------Header------------------- */
+
+nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+h1 {
+    margin-top: 7px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+nav > div > button {
+    border: none;
+    background-color: white;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 600;
+    
+}
+nav > div > button:hover {
+    background-color: black;
+    color: white;
+}
+nav > div > button:last-child {
+    margin-right: 30px;
+}
+nav > div > a {
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: 600;
+}
+nav > div > a:hover {
+    background-color: black;
+    color: white;
+}
+header > img {
+    width: 100%;
+}
+
+/* --------------Main------------- */
+
+main {
+    width: 100%;
+}
+main > h2 {
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+    margin-left: 6%;
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+/* ---------------------------Picture of houses------------------------- */
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.houses {
+    align-items: center;
+}
+.houses > h3 {
+    position: absolute;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.houses > img {
+    overflow: hidden;
+    width: 90%;
+    margin: 7px;
+    
+}
+.headings {
+    border-bottom: 1px solid #ccc;
+    padding: 16px 0;
+    margin:8px ;
+}
+
+
+/*---------------- About Section--------------- */
+
+.second-about {
+    margin: 32px 0px;
+}
+.second-about > p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* -------------------Architect contact section---------------  */
+.second-boxs {
+    display: flex;
+    
+}
+.boxs {
+    width: 50%;
+    justify-content: space-between;
+    margin: 10px;
+}
+.boxs > img {
+    width: 80%;
+}
+.boxs > h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 24px;
+}
+.boxs > label {
+    font-size: 15px;
+    color: #ccc;
+}
+.boxs > p {
+    margin: 20px 0 ;;
+}
+.boxs > button {
+    background-color: #f1f1f1;
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+}
+.boxs > button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ------------------Contact us Section---------------- */
+
+.third > p {
+    margin: 15px 0px;
+}
+.third {
+    margin-bottom: 16px;
+}
+.third > input {
+    display: block;
+    margin: 15px 0 ;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    height: 30px;
+}
+.third > textarea {
+    width: 100%;
+}
+.third > button {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+}
+.third > button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* --------------Last Image ---------------------*/
+
+.fourth > img {
+    width: 100%;
+}
+
+/* ------------Footer------------- */
+
+footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+footer > p {
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------Responsive Code----------- */
+
+@media (max-width: 800px) {
+    .second-boxs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header > img {
+        margin-top: 20px;
+    }
+    nav > div {
+        visibility: hidden; 
+    }
+    /* nav > h1 {
+        font-size: xx-large;
+    } */
+    header > img {
+        max-width: 100%;
+    }
+}
