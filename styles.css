@@ -208,10 +208,13 @@ footer > p {
     nav > div {
         visibility: hidden; 
     }
-    /* nav > h1 {
-        font-size: xx-large;
-    } */
+  
     header > img {
         max-width: 100%;
+    }
+}
+@media (max-width: 600px){
+    h1 {
+        font-size: 50px;
     }
 }
