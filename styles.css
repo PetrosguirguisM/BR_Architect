@@ -205,9 +205,7 @@ footer > p {
     header > img {
         margin-top: 20px;
     }
-    nav > div {
-        visibility: hidden; 
-    }
+
   
     header > img {
         max-width: 100%;
@@ -216,5 +214,8 @@ footer > p {
 @media (max-width: 600px){
     h1 {
         font-size: 50px;
+    }
+        nav > div {
+        visibility: hidden; 
     }
 }
